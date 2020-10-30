@@ -161,11 +161,12 @@
             this.button_Hozzaad.TabIndex = 11;
             this.button_Hozzaad.Text = "Hozzáad";
             this.button_Hozzaad.UseVisualStyleBackColor = true;
+            this.button_Hozzaad.Click += new System.EventHandler(this.button_Hozzaad_Click);
             // 
             // button_Betoltes
             // 
             this.button_Betoltes.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Betoltes.Location = new System.Drawing.Point(335, 554);
+            this.button_Betoltes.Location = new System.Drawing.Point(317, 554);
             this.button_Betoltes.Name = "button_Betoltes";
             this.button_Betoltes.Size = new System.Drawing.Size(115, 34);
             this.button_Betoltes.TabIndex = 12;
@@ -175,12 +176,13 @@
             // button_Mentes
             // 
             this.button_Mentes.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Mentes.Location = new System.Drawing.Point(214, 554);
+            this.button_Mentes.Location = new System.Drawing.Point(196, 554);
             this.button_Mentes.Name = "button_Mentes";
             this.button_Mentes.Size = new System.Drawing.Size(115, 34);
             this.button_Mentes.TabIndex = 13;
             this.button_Mentes.Text = "Mentés";
             this.button_Mentes.UseVisualStyleBackColor = true;
+            this.button_Mentes.Click += new System.EventHandler(this.button_Mentes_Click);
             // 
             // RegisztracioAlkalmazas
             // 
