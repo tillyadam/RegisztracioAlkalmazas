@@ -129,6 +129,10 @@
             this.listBox_KedvencHobbi.Font = new System.Drawing.Font("Courier New", 13.8F);
             this.listBox_KedvencHobbi.FormattingEnabled = true;
             this.listBox_KedvencHobbi.ItemHeight = 25;
+            this.listBox_KedvencHobbi.Items.AddRange(new object[] {
+            "Alvás",
+            "Evés",
+            "Ivás"});
             this.listBox_KedvencHobbi.Location = new System.Drawing.Point(254, 198);
             this.listBox_KedvencHobbi.Name = "listBox_KedvencHobbi";
             this.listBox_KedvencHobbi.Size = new System.Drawing.Size(294, 204);

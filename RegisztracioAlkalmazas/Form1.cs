@@ -67,6 +67,7 @@ namespace RegisztracioAlkalmazas
 
         private void button_Betoltes_Click(object sender, EventArgs e)
         {
+            listBox_KedvencHobbi.Items.Clear();
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog.RestoreDirectory = true;
