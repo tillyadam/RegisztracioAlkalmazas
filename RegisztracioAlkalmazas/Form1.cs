@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RegisztracioAlkalmazas
 {
-    public partial class Form1 : Form
+    public partial class RegisztracioAlkalmazas : Form
     {
-        public Form1()
+        public RegisztracioAlkalmazas()
         {
             InitializeComponent();
         }
