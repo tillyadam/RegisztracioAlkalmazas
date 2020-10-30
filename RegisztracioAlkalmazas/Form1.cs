@@ -49,10 +49,10 @@ namespace RegisztracioAlkalmazas
                     var filenev = saveFileDialog.FileName;
                     StreamWriter sw = new StreamWriter(filenev);
 
-                    sw.Write(textBox_Nev.Text.Trim() + ";" + dateTimePicker_SzulDatum.Value.Date + ";" + radioButton_Ferfi.Checked + ";" + radioButton_No.Checked+";" + listBox_KedvencHobbi.SelectedIndex + ";");
+                    sw.Write(textBox_Nev.Text.Trim() + ";" + dateTimePicker_SzulDatum.Value.Date + ";" + radioButton_Ferfi.Checked + ";" + radioButton_No.Checked + ";" + listBox_KedvencHobbi.SelectedIndex + ";");
                     foreach (var item in listBox_KedvencHobbi.Items)
                     {
-                        sw.Write(item+",");
+                        sw.Write(item + ",");
                     }
 
                     sw.Close();
@@ -82,13 +82,14 @@ namespace RegisztracioAlkalmazas
                 dateTimePicker_SzulDatum.Value = DateTime.Parse(beolvas[1]);
                 radioButton_Ferfi.Checked = Boolean.Parse(beolvas[2]);
                 radioButton_No.Checked = Boolean.Parse(beolvas[3]);
-                string[] hobbik=beolvas[5].Split(',');
+                string[] hobbik = beolvas[5].Split(',');
                 foreach (var item in hobbik)
                 {
                     listBox_KedvencHobbi.Items.Add(item);
                 }
 
                 listBox_KedvencHobbi.SelectedIndex = int.Parse(beolvas[4]);
+                listBox_KedvencHobbi.Items.RemoveAt(listBox_KedvencHobbi.Items.Count - 1);
             }
 
         }
